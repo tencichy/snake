@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.damiskot.DebugController">
+   <children>
+      <Label fx:id="scoreLabel" layoutX="14.0" layoutY="14.0" text="Score: " AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Label fx:id="speedLabel" layoutX="8.0" layoutY="27.0" text="Speed: " AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="27.0" />
+      <Label fx:id="multiplierLabel" layoutX="10.0" layoutY="61.0" text="Multiplier: " AnchorPane.leftAnchor="10.0" />
+      <Separator layoutY="112.0" prefWidth="206.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="85.0" />
+      <Separator layoutX="200.0" layoutY="-8.0" orientation="VERTICAL" prefHeight="70.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="203.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="14.0" layoutY="97.0" text="Keyboard shortcuts:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="97.0" />
+      <Label layoutX="14.0" layoutY="113.0" text="1 - Add segement to snake" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="113.0" />
+      <Label layoutX="14.0" layoutY="131.0" text="2 - Add normal food" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="131.0" />
+      <Label layoutX="14.0" layoutY="150.0" text="3 - Add faster food" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="150.0" />
+      <Label layoutX="14.0" layoutY="169.0" text="4 - Add insane food" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="169.0" />
+      <Label layoutX="14.0" layoutY="188.0" text="5 - Add reset food" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="188.0" />
+      <Label layoutX="14.0" layoutY="207.0" text="6 - Add slow food" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="207.0" />
+      <Label layoutX="14.0" layoutY="226.0" text="7 - Add slower food" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="226.0" />
+      <Label layoutX="9.0" layoutY="304.0" text="Ctrl+Alt+Shift+Del - Disable debug" AnchorPane.leftAnchor="10.0" />
+      <ListView fx:id="foodListView" layoutX="231.0" layoutY="12.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="219.0" AnchorPane.topAnchor="10.0" />
+      <ListView fx:id="snakeListView" layoutX="429.0" layoutY="61.0" prefHeight="200.0" prefWidth="150.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="429.0" AnchorPane.topAnchor="10.0" />
+      <Label layoutX="14.0" layoutY="246.0" text="C - Reset food on pane" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="246.0" />
+      <ListView fx:id="activeFoodListView" layoutX="608.0" layoutY="46.0" prefHeight="200.0" prefWidth="180.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="589.0" AnchorPane.topAnchor="10.0" />
+      <Label fx:id="snakeLengthLabel" layoutX="16.0" layoutY="44.0" text="Length: " AnchorPane.leftAnchor="10.0" />
+      <Label layoutX="10.0" layoutY="265.0" text="Page Up - Speed +10" AnchorPane.leftAnchor="10.0" />
+      <Label layoutX="9.0" layoutY="285.0" text="Page Down - Speed -10" AnchorPane.leftAnchor="10.0" />
+   </children>
+</AnchorPane>
