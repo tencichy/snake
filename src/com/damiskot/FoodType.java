@@ -4,7 +4,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 
 /**
- * The enum Food type. It's holds various values used for calculating 'food' behaviour
+ * The enum Food type. It's holds various values used for calculating snake behaviour after 'eating' one
  */
 public enum FoodType {
 
