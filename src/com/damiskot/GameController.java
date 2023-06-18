@@ -650,7 +650,9 @@ public class GameController {
      * @param dark true - if theme is switching to dark
      */
     private void switchTheme(boolean dark){
+        //Need to stop the timer because the elements of the pane are updated
         gameTimer.stop();
+        //Changing theme to dark
         if(dark){
             gamePane.setStyle("-fx-background-color: black");
             gamePausedLabel.setTextFill(Color.valueOf("b6ffbb"));
@@ -664,6 +666,7 @@ public class GameController {
             }
             gamePane.getChildren().clear();
             gamePane.getChildren().addAll(nodes);
+        //Changing theme to bright
         }else{
             gamePane.setStyle("-fx-background-color: white");
             gamePausedLabel.setTextFill(Color.FORESTGREEN);
